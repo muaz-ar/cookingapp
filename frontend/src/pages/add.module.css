@@ -1,0 +1,105 @@
+/* CSS-Modul: add.module.css */
+
+.main {
+  display: flex;
+  flex-direction: column;
+    padding: 20px;  
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap; /* Erlaubt den Umbruch auf die nächste Zeile */
+  justify-content: left; /* Zentriert die Kinder horizontal */
+  align-items: center; /* Zentriert die Kinder vertikal */
+  margin-bottom: 0.5rem;
+}
+.inputStyle {
+  padding: 0.4rem;
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: rgb(173, 167, 167);
+  margin-left: 0.8rem; /* Abstand zwischen Text und Input */
+}
+
+.inputFlex {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem; /* Abstand zwischen den Eingabefeldern */
+}
+
+.button {
+  padding: 0.4rem;
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: rgb(143, 40, 12);
+  margin-left: 0.8rem; 
+  color: rgb(10, 10, 10);
+  border: none;
+  cursor: pointer;
+}
+.buttonMain {
+  padding: 0.8rem;
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: rgb(143, 40, 12);
+  margin-left: 0.8rem; 
+  color: rgb(10, 10, 10);
+  border: none;
+  cursor: pointer;
+}
+.select {
+  padding: 0.4rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: rgb(79, 79, 79);
+  margin-bottom: 0.5rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: 40px;
+  font-size: 16px;
+  border: 2px solid rgb(251, 248, 248);
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+.recipe {
+  font-family: Arial, sans-serif;
+  max-width: 1700px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: left; /* Text links ausrichten */
+  font-size: 15px; /* Schriftgröße erhöhen */
+  width: 70%; /* Horizontale Größe erhöhen */
+  height: auto; /* Vertikale Größe automatisch anpassen */
+}
+
+.recipe h2, .recipe h3 {
+  color: #333;
+}
+
+.recipe ul, .recipe ol {
+  margin-left: 20px;
+}
+
+.recipe li {
+  margin-bottom: 10px;
+}
+

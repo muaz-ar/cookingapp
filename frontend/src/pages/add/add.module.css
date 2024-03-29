@@ -1,0 +1,62 @@
+/* CSS-Modul: add.module.css */
+
+.main {
+  display: flex;
+  flex-direction: column;
+    padding: 20px;  
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.inputStyle {
+  padding: 0.4rem;
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: white;
+  margin-left: 0.8rem; /* Abstand zwischen Text und Input */
+}
+
+.inputFlex {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem; /* Abstand zwischen den Eingabefeldern */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.select {
+  padding: 0.4rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: 40px;
+  font-size: 16px;
+  border: 2px solid grey;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}

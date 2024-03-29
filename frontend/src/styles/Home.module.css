@@ -1,0 +1,56 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rezepte-liste {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 20px;
+  justify-content: space-around; /* Sorgt für eine gleichmäßige Verteilung der Blöcke */
+}
+
+.rezept-card {
+  background-color: #6a0606;
+  border: 1px solid #c03a3a;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 30%; /* Stellt sicher, dass drei Karten pro Zeile angezeigt werden */
+  box-sizing: border-box;
+}
+
+.rezept-title {
+  font-size: 1.2em;
+  color: #5e1a1a;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.rezept-details, .zubereitung, .tips, .zutatenListe {
+  font-size: 0.9em;
+  margin: 8px 0;
+  color: #383737;
+}
+
+.zutatenListe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.zutatenListe span {
+  background-color: #b06363;
+  padding: 5px;
+  border-radius: 5px;
+}
