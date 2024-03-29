@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Klont das GitHub-Repository
-                git branch: 'main', url: 'https://github.com/muaz-ar/cookingapp.git'
+                git branch: 'main', url: 'https://github.com/muaz-ar/cookingapp.git', credentialsId: 'muaz-ar'
 '
             }
         }
