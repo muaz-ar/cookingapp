@@ -5,7 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Klont das GitHub-Repository
-                git branch: 'main', url: 'https://github.com/muaz-ar/cooking_app.git'
+                git branch: 'main', url: 'https://github.com/muaz-ar/cookingapp.git'
+'
             }
         }
 
@@ -19,14 +20,5 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                // Wechselt in das Verzeichnis 'frontend'
-                dir('frontend') {
-                    // Führt 'npm run build' aus
-                    sh 'npm run build'
-                }
-            }
-        }
     }
 }
