@@ -29,7 +29,7 @@ pipeline {
             steps {
                 dir('backend') {
                     sh '''
-                        source venv/bin/activate'
+                        source venv/bin/activate
                         cd venv/lib/python3.8/site-packages
                         zip -r9 ../../../../function.zip .
                         cd ../../../../
