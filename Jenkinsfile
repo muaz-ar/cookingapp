@@ -28,18 +28,18 @@ pipeline {
         stage('Zip Function') {
             steps {
                 dir('backend') {
-                    sh 'source venv/bin/activate'
-                    sh 'cd venv/lib/python3.8/site-packages'
-                    sh 'zip -r9 ../../../../function.zip .'
-                    sh 'cd ../../../../'
-                    sh 'zip -g function.zip app.py'
+                    sh '''
+                    source venv/bin/activate'
+                    cd venv/lib/python3.8/site-packages
+                    zip -r9 ../../../../function.zip .
+                    cd ../../../../
+                    zip -g function.zip app.py
+                    aws lambda update-function-code --function-name POST_save --zip-file fileb://function.zip
+                    '''
                 }
             }
-        }   steps {
-                dir('backend') {
-                    sh 'aws lambda update-function-code --function-name POST_save --zip-file fileb://function.zip'
-                }
-            }
-        }
+        }  
+        
     }
 }
+
