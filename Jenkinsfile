@@ -18,5 +18,12 @@ pipeline {
                 }
             }
         }
+        stage('dev') {
+            steps {
+                dir('frontend') {
+                    sh 'npm run dev'
+                }
+            }
+        }
     }
 }
