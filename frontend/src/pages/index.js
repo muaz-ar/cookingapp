@@ -108,7 +108,8 @@ export default function HOME() {
     
     <div className={styles.main}>
        <div>
-          <h2>hat es geklappt Mit wenigen Klicks zum individuellen Rezept. Wähle aus Optionen wie Gerichtzeit, Gang, und Personenanzahl</h2>
+            <h1>Die Pipeline steht</h1>
+          <h2>Mit wenigen Klicks zum individuellen Rezept. Wähle aus Optionen wie Gerichtzeit, Gang, und Personenanzahl</h2>
             <ul>
                 <li><strong>Ernährungsart:</strong> Pass dein Rezept an deine Diät an – ob vegetarisch, vegan, gluten- oder laktosefrei.</li>
                 <li><strong>Region:</strong> Lass dich von Küchen aus aller Welt inspirieren.</li>
