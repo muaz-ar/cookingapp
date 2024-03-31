@@ -44,6 +44,7 @@ pipeline {
                 dir('backend') {
                     sh '''
                         . venv/bin/activate
+                        pip install requests
                         python -m unittest test.py
                     '''
                 }
