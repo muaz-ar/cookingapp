@@ -44,7 +44,7 @@ pipeline {
                 dir('backend') {
                     sh '''
                         . venv/bin/activate
-                        python -m unittest discover
+                        python3 test.py
                     '''
                 }
             }
