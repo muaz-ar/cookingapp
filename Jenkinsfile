@@ -17,7 +17,7 @@ pipeline {
                     sh '''
                     npm install
                     npm run build
-                    aws s3 sync . s3://homepage-static1 --delete
+                    aws s3 sync out/ s3://homepage-static1 --delete
                     '''
                 }
             }
