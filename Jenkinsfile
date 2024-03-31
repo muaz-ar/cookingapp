@@ -17,22 +17,18 @@ pipeline {
                     sh 'npm install'
                 }
             }
-        }
-        stage('Build Frontend') {
             steps {
                 dir('frontend') {
                     sh 'npm run build'
                 }
             }
-        }
-        
-        stage('Deploy Frontend') {
             steps {
                 dir('frontend/out') {
                     sh 'aws s3 sync . s3://homepage-static1 --delete'
                 }
             }
         }
+        
         stage('Zip Function') {
             steps {
                 dir('backend') {
