@@ -14,17 +14,11 @@ pipeline {
                 // Wechselt in das Verzeichnis 'frontend'
                 dir('frontend') {
                     // Führt 'npm install' aus
-                    sh 'npm install'
-                }
-            }
-            steps {
-                dir('frontend') {
-                    sh 'npm run build'
-                }
-            }
-            steps {
-                dir('frontend/out') {
-                    sh 'aws s3 sync . s3://homepage-static1 --delete'
+                    sh '''
+                    npm install
+                    npm run build
+                    aws s3 sync . s3://homepage-static1 --delete
+                    '''
                 }
             }
         }
