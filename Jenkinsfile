@@ -39,18 +39,23 @@ pipeline {
                 }
             }
         }
-        stage('unittest') {
+         stage('Lambda_test') {
             steps {
                 dir('backend') {
-                    sh '''
-                        . venv/bin/activate
-                        pip install requests
-                        python -m unittest test.py
-                    '''
+                    // Stellen Sie sicher, dass `test.json` existiert oder erstellen Sie es hier
+                    script {
+                        // Aufruf der Lambda-Funktion mit der Testdatei `test.json` und Speicherung der Antwort
+                        sh "aws lambda invoke --function-name post_save --payload file://test.json response.json"
+
+                        // Optional: Inhalt der Antwort anzeigen
+                        sh "cat response.json"
+                    }
                 }
             }
         }
-        
     }
 }
+        
+    
+
 

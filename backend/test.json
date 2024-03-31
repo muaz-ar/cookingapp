@@ -1,0 +1,4 @@
+{
+    "body": "{\"Rezeptname\": \"Pasta Primavera\", \"Mealtype\": \"Hauptgericht\", \"Coursetype\": \"Hauptspeise\", \"Peoplecount\": 2, \"Specialty\": \"Vegetarisch\", \"Region\": \"Italienisch\", \"Country\": \"Italien\", \"Zutaten\": [{\"zutat\": \"Pasta\", \"menge\": 200, \"mengeneinheit\": \"g\"}, {\"zutat\": \"Brokkoli\", \"menge\": 100, \"mengeneinheit\": \"g\"}, {\"zutat\": \"Sahne\", \"menge\": 100, \"mengeneinheit\": \"ml\"}]}"
+  }
+  
