@@ -38,7 +38,17 @@ pipeline {
                     '''
                 }
             }
-        }  
+        }
+        stage('unittest') {
+            steps {
+                dir('backend') {
+                    sh '''
+                        . venv/bin/activate
+                        python -m unittest discover
+                    '''
+                }
+            }
+        }
         
     }
 }
