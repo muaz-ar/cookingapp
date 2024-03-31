@@ -34,7 +34,7 @@ pipeline {
                         zip -r9 ../../../../function.zip .
                         cd ../../../../
                         zip -g function.zip app.py
-                        aws lambda update-function-code --function-name POST_save --zip-file fileb://function.zip
+                        aws lambda update-function-code --function-name post_save --zip-file fileb://function.zip
                     '''
                 }
             }
