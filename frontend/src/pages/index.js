@@ -108,7 +108,7 @@ export default function HOME() {
     
     <div className={styles.main}>
        <div>
-            <h1>Die  steht</h1>
+            <h1>Die hey klapp jetzt mal man  steht</h1>
           <h2>Mit wenigen dhdhhddhdhd Klicks zum individuellen Rezept. Wähle aus Optionen wie Gerichtzeit, Gang, und Personenanzahl</h2>
             <ul>
                 <li><strong>Ernährungsart:</strong> Pass dein Rezept an deine Diät an – ob vegetarisch, vegan, gluten- oder laktosefrei.</li>
