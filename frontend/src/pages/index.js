@@ -63,7 +63,7 @@ export default function HOME() {
       steps: parts.slice(parts.findIndex(part => part.startsWith("Anleitung:")) + 1),
     };
   };
-  //async await für routing endpoint und api
+  
   const handlespeichersendenenClick = async () => {
     const isRezeptNameValid = validateRezeptname();
     const areAllMengenValid = zutatenListe.every(zutat => validateMenge(zutat.menge));
@@ -94,11 +94,11 @@ export default function HOME() {
         
         if (!response.ok) throw new Error('Netzwerkantwort war nicht ok.');
         const data = await response.json();
-        // Hier setzt du den recipeResponse-Zustand, das ist in Ordnung
+        
         setRecipeResponse(data.recipe); 
-        // Hier parst du die Antwort und aktualisierst den recipe-Zustand
+        
         const parsedRecipe = parseRecipeResponse(data.recipe);
-        setRecipe(parsedRecipe); // Füge diese Zeile hinzu, um den recipe-Zustand zu aktualisieren
+        setRecipe(parsedRecipe); 
     
       } catch (error) {
         console.error('Fehler beim Senden der Daten:', error);
@@ -106,10 +106,13 @@ export default function HOME() {
     };
   return (
     
+
+
+
+
     <div className={styles.main}>
        <div>
-            <h1>Die hey klapp jetzt mal man  steht</h1>
-          <h2>Mit wenigen dhdhhddhdhd Klicks zum individuellen Rezept. Wähle aus Optionen wie Gerichtzeit, Gang, und Personenanzahl</h2>
+          <h2>Mit wenigen Klicks zum individuellen Rezept. Wähle aus Optionen wie Gerichtzeit, Gang, und Personenanzahl</h2>
             <ul>
                 <li><strong>Ernährungsart:</strong> Pass dein Rezept an deine Diät an – ob vegetarisch, vegan, gluten- oder laktosefrei.</li>
                 <li><strong>Region:</strong> Lass dich von Küchen aus aller Welt inspirieren.</li>
@@ -124,7 +127,7 @@ export default function HOME() {
           value={rezeptName}
           onChange={(e) => setRezeptName(e.target.value)}
           // ? ist ein ternären Operator verkürzung if-else
-          //Bedingung ? Ausdruck1 [bei true ausf.]: Ausdruck2 [bei false ausf.]
+          
           style={rezeptNameError ? {borderColor: "red"} :null}
         />
         {rezeptNameError && <div style={{ color: 'red' }}>{rezeptNameError}</div>}
