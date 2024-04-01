@@ -41,10 +41,10 @@ pipeline {
             steps {
                 dir('backend') {
                     script {
-                        // Aufruf der Lambda-Funktion mit der korrekten Behandlung des Payload-Formats
+                        
                         sh "aws lambda invoke --function-name post_save --payload file://test.json --cli-binary-format raw-in-base64-out response.json"
 
-                        // Optional: Inhalt der Antwort anzeigen
+                       
                         sh "cat response.json"
                     }
                 }
